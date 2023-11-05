@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MediConnect</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://www.dphealthnow.com/wp-content/uploads/2016/05/blue-medical-background-1.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-blue w3-text-white w3-card" id="myNavbar">
+    <a href="homepage.html" class="w3-bar-item w3-button w3-wide">MediConnect</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      
+      <a href="find.html" class="w3-bar-item w3-button"><i class="fa fa-stethoscope"></i> Find doctor</a>
+      <a href="volunteer.html" class="w3-bar-item w3-button"><i class="fa fa-heart"></i> Volunteer</a>
+      <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Donate</a>
+      <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Profile</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+   <!-- Header -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <br>
+    <br>
+    <br>
+
+
+<!-- Donation Form -->
+<div class="w3-content" style="max-width:700px">
+  <form action="donation.php" method="POST" class="w3-container w3-card-4 w3-light-grey w3-margin">
+    <h2 class="w3-center">Donation Form</h2><br>
+
+    <div class="w3-section">
+      <label for="name"><b>Name</b></label>
+      <input type="text" id="name" name="name" class="w3-input w3-border" placeholder="Enter your name" required>
+    </div>
+    
+    <div class="w3-section">
+      <label for="phone"><b>Phone Number</b></label>
+      <input type="text" id="phone" name="phone" class="w3-input w3-border" placeholder="Enter your phone number" required>
+    </div>
+    
+    <div class="w3-section">
+      <label for="email"><b>Email</b></label>
+      <input type="email" id="email" name="email" class="w3-input w3-border" placeholder="Enter your email" required>
+    </div>
+
+    <div class="w3-section">
+      <label for="email"><b>Organization Name</b></label>
+      <input type="email" id="email" name="email" class="w3-input w3-border" placeholder="Enter org name (i.e. hospital, medical office, etc.)" required>
+    </div>
+    
+    <div class="w3-section">
+      <label for="payment"><b>Payment Account</b></label>
+      <input type="text" id="payment" name="payment" class="w3-input w3-border" placeholder="Enter your payment account" required>
+    </div>
+
+    <div class="w3-section">
+      <label for="currency"><b>Monetary Amount</b></label>
+      <select id="currency" name="currency" class="w3-select w3-border">
+        <option value="USD">USD</option>
+        <option value="INR">INR</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+      </select>
+    </div>
+
+    <button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">
+      PayPal 
+      <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal" width="37" height="23">
+    </button>
+
+    <button class="w3-button w3-red w3-padding-large w3-large w3-margin-top">
+      Google Pay
+      <img src="https://logowik.com/content/uploads/images/google-pay-icon-20205841.logowik.com.webp" alt="Google Pay" width="30" height="23">
+    </button>
+    
+    <p><a href="thankyou.html" class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Donate</a></p>
+  </form>
+</div>
+  </header>
+
+
+
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
