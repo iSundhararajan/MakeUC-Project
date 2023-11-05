@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MediConnect</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif;}
+.w3-bar .w3-button {
+ padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-blue w3-text-white w3-card" id="myNavbar">
+    <a href="homepage.html" class="w3-bar-item w3-button w3-wide">MediConnect</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+
+      <a href="find.html" class="w3-bar-item w3-button"><i class="fa fa-stethoscope"></i> Find doctor</a>
+      <a href="volunteer.html" class="w3-bar-item w3-button"><i class="fa fa-heart"></i> Volunteer</a>
+      <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Donate</a>
+      <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Profile</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Ratings Section -->
+<div class="w3-container w3-padding-64">
+  <h2 class="w3-text-blue">Doctor Ratings</h2>
+
+  <div class="w3-row">
+  
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-padding">
+        <h3>Dr. Anika Patel</h3>
+        <p class="w3-opacity">Specialty: Cardiology</p>
+        <p>Rating: 
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </p>
+        <p>Comments: Dr. Patel is a true expert in her field. She takes the time to explain complex heart issues in a way that's easy to understand. Her compassionate care truly made a difference in my life. </p>
+      </div>
+    </div>
+
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-padding">
+        <h3>Dr. Rajesh Kumar</h3>
+        <p class="w3-opacity">Specialty: Orthopedics</p>
+        <p>Rating: 
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          
+        </p>
+        <p>Comments: Dr. Kumar is an excellent orthopedic specialist. He provided me with top-notch care, and I'm now back on my feet thanks to his expertise.</p>
+      </div>
+    </div>
+
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-padding">
+        <h3>Dr. Aisha Khan</h3>
+        <p class="w3-opacity">Specialty: Internal Medicine</p>
+        <p>Rating: 
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </p>
+        <p>Comments: Dr. Khan is a compassionate and knowledgeable physician. She listens to her patients carefully and provides top-notch care. </p>
+      </div>
+    </div>
+    <br>
+
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-padding">
+        <h3>Dr. Priya Sharma</h3>
+        <p class="w3-opacity">Specialty: Pediatrics</p>
+        <p>Rating: 
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          
+        </p>
+        <p>Comments: Dr. Sharma is a lifesaver for our family. She's wonderful with kids and always addresses our concerns with patience and kindness. </p>
+      </div>
+    </div>
+
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-padding">
+        <h3>Dr. Rajveer Singh</h3>
+        <p class="w3-opacity">Specialty: Psychiatry</p>
+        <p>Rating: 
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+
+        </p>
+        <p>Comments: Dr. Singh is a compassionate and understanding psychiatrist. He's been a crucial support in my mental health journey, and I can't thank him enough. </p>
+      </div>
+    </div>
+
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-padding">
+        <h3>Dr. John Anderson</h3>
+        <p class="w3-opacity">Specialty: Dermatology</p>
+        <p>Rating: 
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          
+        </p>
+        <p>Comments: Dr. Anderson helped me with a persistent skin issue. However, he doesn't attentively listen to the patient's concerns and asks a lot of questions. </p>
+      </div>
+    </div>
+    
+    <br>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-padding">
+        <h3>Dr. Lakshmi Srinivasan</h3>
+        <p class="w3-opacity">Specialty: Family Medicine</p>
+        <p>Rating: 
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </p>
+        <p>Comments: Dr. Lakshmi Srinivasan is a dedicated family physician. She's been our go-to doctor for years, and her warm and friendly approach makes every visit a pleasant experience. </p>
+      </div>
+    </div>
+
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-padding">
+        <h3>Dr. Prakash Reddy</h3>
+        <p class="w3-opacity">Specialty: Ophthalmology</p>
+        <p>Rating: 
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+
+        </p>
+        <p>Comments: Dr. Reddy is an exceptional ophthalmologist. He performed my eye surgery flawlessly, and his post-op care is top-notch. I can see clearly now, thanks to him! </p>
+      </div>
+    </div>
+
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card w3-padding">
+        <h3>Dr. Ayesha Nairat</h3>
+        <p class="w3-opacity">Specialty: Obstetrics and Gynecology</p>
+        <p>Rating: 
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </p>
+        <p>Comments: Dr. Nairat is a compassionate and highly skilled OBGYN. She made me feel comfortable throughout my pregnancy, and I trust her completely with my care. </p>
+      </div>
+    </div>
+    
+
+    
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-blue w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <p class="w3-small">© MediConnect 2023. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
