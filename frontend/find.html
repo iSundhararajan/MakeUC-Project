@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <title>MediConnect</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#map {
+  height: 80%;
+}
+#search-bar {
+  width: 50%;
+  margin: 20px auto;
+}
+</style>
+</head>
+<body>
+  
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-light-blue w3-text-white w3-card" id="myNavbar">
+      <a href="homepage.html" class="w3-bar-item w3-button w3-wide">MediConnect</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+
+        <a href="find.html" class="w3-bar-item w3-button"><i class="fa fa-stethoscope"></i> Find doctor</a>
+        <a href="care.html" class="w3-bar-item w3-button"><i class="fa fa-heart"></i> Emergency Care</a>
+        <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Donate</a>
+        <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Profile</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  
+<div id="map"></div>
+<input type="text" id="search-bar" placeholder="Search for hospitals or doctors near you...">
+<script>
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
+  });
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-blue w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+    <p class="w3-small">© MediConnect 2023. All rights reserved.</p>
+  </footer>
+</body>
+</html>
