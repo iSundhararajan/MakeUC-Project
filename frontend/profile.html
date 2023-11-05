@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif;}
+.profile-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.profile-banner {
+  height: 200px;
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.profile-pic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile-container h1 {
+  text-align: center;
+}
+.profile-container p {
+  margin-bottom: 10px;
+}
+.profile-container button {
+  margin: 10px;
+}
+
+  
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-blue w3-text-white w3-card" id="myNavbar">
+    <a href="homepage.html" class="w3-bar-item w3-button w3-wide">MediConnect</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      
+      <a href="find.html" class="w3-bar-item w3-button"><i class="fa fa-stethoscope"></i> Find doctor</a>
+      <a href="volunteer.html" class="w3-bar-item w3-button"><i class="fa fa-heart"></i> Volunteer</a>
+      <a href="donate.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Donate</a>
+      <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Profile</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+<div class="profile-container">
+  <div class="profile-banner"></div>
+  
+  <h1>Profile</h1>
+  <p><strong>Name:</strong> Jane Doe</p>
+  <p><strong>Date of Birth:</strong> January 1, 1990</p>
+  <p><strong>Gender:</strong> Female</p>
+  <p><strong>Email:</strong> janedoe@gmail.com</p>
+  <p><strong>Phone:</strong> (123) 456-7890</p>
+  <p><strong>Address:</strong> 123 Main St, City, State</p>
+
+  <p><a href="" class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Medical History</a> <a href="" class="w3-button w3-red w3-padding-large w3-large w3-margin-top">Create Appointment</a></p>
+
+  <h2>Appointment List</h2>
+  <ul>
+    <li>Appointment with Dr. Singh on Nov. 1st @ 3:30pm</li>
+    <li>Appointment with Dr. Khan on Nov. 15th @ 10 am</li>
+    
+  </ul>
+</div>
+
+</body>
+</html>
